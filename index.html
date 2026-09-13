@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fereshte Mohammadi — Actress</title>
+<meta name="description" content="Selected work of Fereshte Mohammadi, stage and screen actress.">
+<meta name="theme-color" content="#0a0908">
+
+<!-- Inline favicon: a gold serif F on the page's own black. No extra request. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0908'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='21' fill='%23c8963e' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / link previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fereshte Mohammadi — Actress">
+<meta property="og:description" content="Selected work of Fereshte Mohammadi, stage and screen actress.">
+<!-- Link previews (WhatsApp, Telegram, Facebook, X) need full addresses.
+     If the site moves to its own domain, update these two lines. -->
+<meta property="og:url" content="https://m-fereshte.github.io/">
+<meta property="og:image" content="https://m-fereshte.github.io/assets/img/hero-snow-1600.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Vazirmatn:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#work">Skip to work</a>
+
+<!-- ============================================================== nav -->
+<header class="nav" id="nav">
+  <a class="nav__name" href="#top" id="navName">Fereshte Mohammadi</a>
+  <nav class="nav__links" aria-label="Sections">
+    <a class="nav__link" href="#about"   id="navAbout"   data-optional>About</a>
+    <a class="nav__link" href="#work"    id="navWork">Work</a>
+    <a class="nav__link" href="#reel"    id="navReel">Reel</a>
+    <a class="nav__link" href="#press"   id="navPress"   data-optional>Press</a>
+    <a class="nav__link" href="#contact" id="navContact" data-optional>Contact</a>
+    <button class="lang" id="langBtn" type="button">فارسی</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ========================================================== hero -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <picture>
+        <source type="image/avif">
+        <source id="heroSrc" type="image/webp">
+        <img id="heroImg" alt="" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+    <div class="hero__inner">
+      <h1 class="hero__name" id="heroName">Fereshte Mohammadi</h1>
+      <div class="hero__meta">
+        <span id="heroRole"></span>
+        <span id="heroLine"></span>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span id="heroScrollTxt"></span></div>
+  </section>
+
+  <!-- ========================================================== about -->
+  <section class="section" id="about">
+    <p class="eyebrow" id="bioEyebrow"></p>
+    <div class="bio__grid">
+      <div class="bio__portrait">
+        <picture>
+          <source type="image/avif">
+        <source id="bioSrc" type="image/webp">
+          <img id="bioPortrait" loading="lazy" decoding="async" alt="">
+        </picture>
+      </div>
+      <div>
+        <div class="bio__text" id="bioText"></div>
+        <div class="facts" id="bioFacts"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== credits -->
+  <section class="section section--tight" id="credits">
+    <p class="eyebrow" id="creditsEyebrow"></p>
+    <div class="credits__head" id="creditsHead"></div>
+    <div class="credits__list" id="creditsList"></div>
+  </section>
+
+  <!-- =========================================================== work -->
+  <section class="section" id="work">
+    <p class="eyebrow" id="workEyebrow"></p>
+    <p class="lead" id="workIntro" style="margin:0 0 clamp(2rem,5vw,3.5rem);max-width:34rem"></p>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <!-- =========================================================== reel -->
+  <section class="section" id="reel">
+    <p class="eyebrow" id="reelEyebrow"></p>
+    <p class="lead" id="reelIntro" style="margin:0 0 clamp(2rem,5vw,3rem);max-width:34rem"></p>
+    <div class="reel" id="reelGrid"></div>
+  </section>
+
+  <!-- ========================================================== press -->
+  <section class="section" id="press">
+    <p class="eyebrow" id="pressEyebrow"></p>
+    <p class="lead" id="pressIntro" style="margin:0 0 clamp(2rem,5vw,3rem);max-width:34rem"></p>
+    <figure class="press__feature" id="pressFeature" hidden></figure>
+    <ol class="press__list" id="pressList"></ol>
+  </section>
+
+  <!-- ====================================================== instagram -->
+  <section class="section section--tight" id="elsewhere">
+    <p class="eyebrow" id="igEyebrow"></p>
+    <p class="lead" id="igHandle" style="margin:0"></p>
+    <div class="ig__strip" id="igStrip"></div>
+    <a class="ig__cta" id="igCta" target="_blank" rel="noopener noreferrer"></a>
+  </section>
+
+  <!-- ======================================================== contact -->
+  <section class="section" id="contact">
+    <p class="eyebrow" id="contactEyebrow"></p>
+    <p class="lead" id="contactLead" style="margin:0;max-width:34rem"></p>
+    <div class="contact__grid">
+      <div class="contact__block">
+        <h3 id="emailLabel"></h3>
+        <a class="contact__mail" id="emailLink" href="#"></a>
+      </div>
+      <div class="contact__block">
+        <h3 id="agencyLabel"></h3>
+        <p id="agencyVal" style="margin:0;color:var(--bone-dim)"></p>
+        <p id="photoCredit" style="margin:1.25rem 0 0;font-size:.8125rem;color:var(--muted)"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span id="footRights"></span>
+  <a href="#top" id="footTop"></a>
+</footer>
+
+<!-- ========================================================= lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+  <div class="lb__bar">
+    <span class="lb__count" id="lbCount"></span>
+    <button class="lb__close" id="lbClose" type="button">Close</button>
+  </div>
+  <div class="lb__stage" id="lbStage">
+    <button class="lb__nav lb__nav--prev" id="lbPrev" type="button" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M15 5l-7 7 7 7"/>
+      </svg>
+    </button>
+    <img class="lb__img" id="lbImg" alt="">
+    <button class="lb__nav lb__nav--next" id="lbNext" type="button" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+  </div>
+  <div class="lb__foot"><span id="lbCap"></span></div>
+</div>
+
+<!-- Written by tools/optimize-media.sh. Absent until you run it, which is fine:
+     the site falls back to the originals in images/. -->
+<script src="assets/js/media.js" onerror="this.remove()"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/hero3d.js"></script>
+</body>
+</html>
